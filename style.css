@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #ADD8E6; /* Light Blue Background */
     color: #fff;
     padding: 20px;
 }
@@ -18,7 +18,7 @@ header {
 
 h1 {
     font-size: 2.5em;
-    color: #ADD8E6; /* Light Blue */
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -51,8 +51,8 @@ th, td {
 }
 
 th {
-    background-color: #ADD8E6; /* Light Blue */
-    color: #000;
+    background-color: #000;
+    color: #ADD8E6; /* Light Blue */
 }
 
 td {
