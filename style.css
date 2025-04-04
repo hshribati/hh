@@ -1,74 +1,104 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
 }
 
+/* Background */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ADD8E6; /* Light Blue Background */
-    color: #fff;
-    padding: 20px;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #000;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-h3 {
-    color: #FFD700; /* Gold */
-    font-size: 1.2em;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.games-table {
+    background-color: #97d8e8;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
 }
 
+/* Gold Frame */
+.gold-frame {
+    display: block;
+    padding: 10px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f6f6f6, #FFD700);
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px;
+}
+
+/* Black Content Container */
+.container {
+    background-color: #000;
+    border-radius: 40px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* Header */
+h1 {
+    font-size: 32px;
+    color: #FFD700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
 table {
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
-    background-color: #1f1f1f;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #FFD700;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 th, td {
     padding: 12px;
     text-align: center;
-    font-size: 1.1em;
-    border: 1px solid #333;
+    border-bottom: 1px solid #FFD700;
 }
 
 th {
-    background-color: #000;
-    color: #ADD8E6; /* Light Blue */
+    background-color: #FFD700;
+    color: #000;
+    font-weight: bold;
 }
 
-td {
-    background-color: #333;
-    color: #fff;
-}
-
-tr:nth-child(even) td {
+tr:nth-child(even) {
     background-color: #222;
 }
 
-tr:hover td {
-    background-color: #FFD700; /* Gold */
+tr:hover {
+    background-color: #FFD700;
     color: #000;
+    transition: 0.3s ease-in-out;
 }
 
-footer {
-    margin-top: 30px;
+/* Footer */
+footer h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gold-frame, .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
