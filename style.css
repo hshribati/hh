@@ -38,6 +38,11 @@ body {
     width: 100%;
     max-width: 1000px;
     margin: 50px auto;
+
+    display: flex;
+    justify-content: center; /* Centers table horizontally */
+    align-items: center; /* Centers table vertically if needed */
+    flex-direction: column;
 }
 
 /* Header */
